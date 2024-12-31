@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <script src="assets/js/typing-effect.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+    <link rel="stylesheet" href="assets/css/index.css" />
+</head>
+<body>
+<!-- Nút để mở bức thư -->
+  <button id="openLetterBtn">Mở Bức Thư</button>
+
+  <!-- Hộp thư, ban đầu ẩn -->
+  <div id="letter" class="letter-box">
+<!--    <h2>Bức Thư</h2>-->
+<h1 data-typing-effect>Hello you, I'm a typing effect!</h1>
+    <p data-typing-effect>
+      What I'm doing different compared to other typing effects is that I
+      reserve the space of the animated text. That way other elements on the
+      page don't jump when the text container changes its size while typing.<br />
+      And centered text is possible as well.<br />
+      As well as line-breaks. Even <strong>bold text</strong> or other tags.
+    </p>
+    <p data-typing-effect>
+      In this demo, multiple elements are animated after another.<br />You can
+      control the typing speed as well as the delay between two animated
+      elements.
+    </p>
+    <p data-typing-effect>
+      Every character gets wrapped in a <code>span</code>. When the animation is
+      done, the containers are removed and the initial state is restored. Some
+      fonts are rendered differently, when characters are wrapped in a tag,
+      especially when ligatures are turned on. Because of that, you might see an
+      unlovely effect where your text moves when the animation is done. To avoid
+      that you can disable restoring of the initial state.
+    </p>
+    <p data-typing-effect>
+      I return a <code>Promise</code>. So, when I'm done, you can do something
+      like:
+    </p>
+      <button id="closeLetterBtn" class="close_button">Đóng</button>
+  </div>
+<script>
+        // script.js
+
+	// Lấy các phần tử từ DOM
+	const openLetterBtn = document.getElementById('openLetterBtn');
+	const letterBox = document.getElementById('letter');
+	const closeLetterBtn = document.getElementById('closeLetterBtn');
+	const letterContent = document.getElementById('letterContent');
+
+	// Khi nhấn vào nút "Mở Bức Thư", hiển thị bức thư và bắt đầu hiệu ứng đánh máy
+	openLetterBtn.addEventListener('click', function() {
+	  letterBox.style.display = 'block';
+
+	  // Đảm bảo hiệu ứng đánh máy bắt đầu khi bức thư đã hiển thị đầy đủ
+	  // setTimeout(function() {
+		// letterContent.style.animationPlayState = 'running'; // Bắt đầu hiệu ứng đánh máy
+	  // }, 100); // Đợi 100ms để đảm bảo bức thư đã hiển thị
+	});
+
+	// Khi nhấn vào nút "Đóng", ẩn bức thư và dừng hiệu ứng
+	closeLetterBtn.addEventListener('click', function() {
+	  letterBox.style.display = 'none';
+	  letterContent.style.animationPlayState = 'paused'; // Tạm dừng hiệu ứng khi đóng
+	});
+
+    </script>
+</body>
+</html>

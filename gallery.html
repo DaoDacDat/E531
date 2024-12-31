@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" type="image/png" href="./img/CILKGax.png" />
+        <!-- Tiêu đề của trang ảnh kĩ niệm -->
+        <title>Photo Gallery</title>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/gallery.css">
+          <link rel="stylesheet" href="assets/css/styles.css">
+          <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="assets/js/typing-effect.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+    </head>
+    <body>
+
+        <div class="buttons">
+            <a href="main.html" class="btn btn-bir">🎊</a>
+            <a href="timeline.html" class="btn btn-timeline">⏳</a>
+            <a href="gallery.html" class="btn btn-gallery">📷</a>
+        <!--    <a href="gallery.html" class="btn btn-gallery">Picture</a> -->
+        </div>
+
+    <main>
+        <div class="message_">
+        <h2>
+        A place to keep our memories
+
+        </h2>
+<!--        <script>-->
+<!--      // let heading = document.querySelector('h1').innerText.length;-->
+<!--      // document.documentElement.style.setProperty('&#45;&#45;character', heading);-->
+<!--    </script>-->
+        </div>
+        <button id="openLetterBtn" class="mail-button">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <h3>
+          You receive a letter 👆🏻
+      </h3>
+      <!-- Hộp thư, ban đầu ẩn -->
+
+        <!-- 6. Thay tất cả bằng hình ảnh của bạn -->
+           <div class="gallery-container gallery" id="photos" style="height: 0px;width: 150%;">
+      <ul id="container">
+        <li> <a href="1/Va2.jpg"
+            data-caption=""
+            data-alt="Hay Bales">
+            <img src="1/Va2_.jpg" alt="Hay Bales." class="gallery__item">
+          </a>
+        </li>
+        <li><a href="1/Va5.jpg"
+            data-caption=""
+            data-alt="Lake">
+            <img src="1/Va5_.jpg" alt="Lake" class="gallery__item">
+          </a>
+        </li>
+
+        <li><a href="1/Va1.jpg"
+            data-caption=""
+            data-alt="Iceberg">
+            <img src="1/Va1_.jpg" alt="Iceberg" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="1/Va3.jpg"
+            data-caption=""
+            data-alt="Canyon">
+            <img src="1/Va3_.jpg" alt="Canyon" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="2/Va4.jpg"
+            data-caption=""
+            data-alt="Desert">
+            <img src="2/Va4.jpg" alt="Desert" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="2/Va11.jpg"
+            data-caption="" data-alt="Fall">
+            <img src="2/Va11.jpg" alt="Fall" class="gallery__item">
+          </a>
+        </li>
+        <li><a href="2/Va9.jpg" data-caption=""
+            data-alt="Plantation">
+            <img src="2/Va9.jpg" alt="Plantation" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="2/Va10.jpg" data-caption=""
+            data-alt="Dunes">
+            <img src="2/Va10.jpg" alt="Dunes" class="gallery__item">
+          </a>
+        </li>
+        <li><a href="3/Va7.jpg" data-caption=""
+            data-alt="Countryside Lane">
+            <img src="3/Va7.jpg" alt="Countryside Lane" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="3/Va8.jpg" data-caption=""
+            data-alt="Sunset">
+            <img src="3/Va8.jpg" alt="Sunset" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="3/Va6.jpg"
+            data-caption=""
+            data-alt="Cave">
+            <img src="3/Va6.jpg" alt="Cave" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="3/Va13.jpg"
+            data-caption=""
+            data-alt="Bluebells">
+            <img src="3/Va13.jpg" alt="Bluebells" class="gallery__item">
+          </a>
+        </li>
+        <li><a href="4/Va14.jpg" data-caption=""
+            data-alt="Countryside Lane">
+            <img src="4/Va14.jpg" alt="Countryside Lane" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="4/Va12.jpg" data-caption=""
+            data-alt="Sunset">
+            <img src="4/Va12.jpg" alt="Sunset" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="4/Va15.jpg"
+            data-caption=""
+            data-alt="Cave">
+            <img src="4/Va15.jpg" alt="Cave" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="4/Va16.jpg"
+            data-caption=""
+            data-alt="Bluebells">
+            <img src="4/Va16.jpg" alt="Bluebells" class="gallery__item">
+          </a>
+        </li>
+      </ul>
+    </div>
+        <div id="letter" class="letter-box">
+<!--    <h2>Bức Thư</h2>-->
+<h1 data-typing-effect>Hello you, I'm a typing effect!</h1>
+<h1 data-typing-effect>Hello you, I'm a typing effect!</h1>
+    <p data-typing-effect></p>
+    <p data-typing-effect>
+      Thư gửi cậu,
+            </p>
+    <p data-typing-effect>
+        Tớ chẳng biết chúng mình sẽ ở cạnh nhau bao lâu, tớ sẽ được nhìn thấy cậu đi làm vào mỗi buổi sáng đến khi nào, vì chẳng nói trước được gì. Nhưng trong hiện tại, tớ chắc chắn sẽ luôn ở bên cậu, ủng hộ và yêu thương cậu bằng tất cả những gì tớ có.
+
+    </p>
+    <p data-typing-effect>
+
+    </p>
+            <p data-typing-effect>
+      Dù có lúc chúng mình không hiểu ý nhau, đơn giản vì chúng mình là 2 người khác biệt hoàn toàn với nhau mà, nhưng tớ vẫn luôn cố gắng để có thể đồng cảm được với cậu khi chúng mình gặp vấn
+                 đề. Đôi lúc có những chuyện thật khó để nói ra bằng lời, tớ còn hậu đậu và không giỏi thể hiện cảm xúc nữa. Vậy nên tớ hi vọng cậu có thể bỏ qua những lần tớ mắc lỗi. Hãy cùng trân trọng và tạo thật nhiều kỷ niệm đáng nhớ với nhau nhé.
+    </p>
+            <p data-typing-effect>
+      Có một chuyện tớ đã suy nghĩ rất lâu và tớ muốn nói với cậu, vậy nên hẹn cậu vào một dịp gần nhất nhé.
+    </p>
+    <p data-typing-effect>
+      Cảm ơn, xin lỗi và yêu thương cậu thật nhiều,
+    </p>
+    <p data-typing-effect>
+      Đạt.
+    </p>
+            <h1 data-typing-effect>Hello you, I'm a typing effect!</h1>
+
+      <button id="closeLetterBtn" class="mail-button">Close
+
+          <i class="fas fa-envelope"></i>
+
+      </button>
+  </div>
+<script>
+        // script.js
+
+	// Lấy các phần tử từ DOM
+	const openLetterBtn = document.getElementById('openLetterBtn');
+	const letterBox = document.getElementById('letter');
+	const closeLetterBtn = document.getElementById('closeLetterBtn');
+	const letterContent = document.getElementById('letterContent');
+
+	// Khi nhấn vào nút "Mở Bức Thư", hiển thị bức thư và bắt đầu hiệu ứng đánh máy
+	openLetterBtn.addEventListener('click', function() {
+	  letterBox.style.display = 'block';
+
+	  // // Đảm bảo hiệu ứng đánh máy bắt đầu khi bức thư đã hiển thị đầy đủ
+	  // setTimeout(function() {
+		// letterContent.style.animationPlayState = 'running'; // Bắt đầu hiệu ứng đánh máy
+	  // }, 10000); // Đợi 100ms để đảm bảo bức thư đã hiển thị
+	});
+
+	// Khi nhấn vào nút "Đóng", ẩn bức thư và dừng hiệu ứng
+	closeLetterBtn.addEventListener('click', function() {
+	  letterBox.style.display = 'none';
+	  letterContent.style.animationPlayState = 'paused'; // Tạm dừng hiệu ứng khi đóng
+	});
+
+    </script>
+    </main>
+        <!-- Phần nhạc -->
+        <audio id="player" autoplay loop>
+            <source src="./music/NhoMaiChuyenDiNay-ForestStudioBuiCongNamWrenEvansTienLuatDieuNhiCam-13595195.mp3" type="audio/mp3" />
+        </audio>
+        <script src="assets/js/baguetteBox.min.js" async></script>
+      <!-- <script src="assets/js/searchFilter.js"></script> -->
+      <script src="assets/js/app.js"></script>
+        <script>
+            const audio = document.getElementById("player");
+            audio.volume = 0.5; // Set volume to 50%
+            window.addEventListener('load', function () {
+              baguetteBox.run(".gallery", {
+                captions: true,
+                buttons: 'auto',
+                fullScreen: false,
+                noScrollbars: false,
+                titleTag: true,
+                async: false,
+                preload: 2,
+                animation: 'fadeIn',
+                onChange: null
+              });
+            });
+        </script>
+
+    </body>
+
+    <script src="./js/gallery.js"></script>
+</html>

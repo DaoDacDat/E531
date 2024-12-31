@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="./img/CILKGax.png" />
+        <!-- 1. Tiêu đề của file index -->
+        <title>Happy birthday</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="js/main.js" type="text/javascript"></script><title>Flowers</title>
+        <link rel="stylesheet" href="./css/main.css" />
+
+    </head>
+    <body class="page__main">
+        <!-- 3. Phần nhạc -->
+        <audio id="player" autoplay loop>
+            <source src="./music/Eric%20Clapton%20-%20Wonderful%20Tonight%20(Cover%20by%20Elliot%20James%20Reay).ogg" type="audio/ogg" />
+        </audio>
+        <script>
+            const audio = document.getElementById("player");
+            audio.volume = 0.5; // Set volume to 50%
+        </script>
+        <div class="buttons">
+            <!-- Chữ ở menu bạn có thể sửa lại theo ý của bạn -->
+            <a href="main.html" class="btn btn-bir">🎊</a>
+            <a href="timeline.html" class="btn btn-timeline">⏳</a>
+            <a href="gallery.html" class="btn btn-gallery">📷</a>
+        </div>
+    <main>
+        <!-- 2. Phần ảnh của người bạn mún chúc -->
+        <div class="avt">
+            <img src="./img/avatar_2.jpg" alt="" class="cover" />
+        </div>
+
+        <script src="js/main.js"></script>
+      <script>
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  for stopping the confetti
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 30000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+        start();
+        stop();
+      </script>
+        <div class="message">
+        <h1  data-text="HAPPY BIRTHDAY TO YOU, EMMA">
+        HAPPY BIRTHDAY TO YOU, EMMA
+
+        </h1>
+        <script>
+      let heading = document.querySelector('h1').innerText.length;
+      document.documentElement.style.setProperty('--character', heading);
+    </script>
+        </div>
+    </main>
+
+
+    </body>
+</html>
